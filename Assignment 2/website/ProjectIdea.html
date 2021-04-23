@@ -4,20 +4,56 @@
 	<link rel="stylesheet" type="text/css" href="MYSTYLE.css" />
 	<title>Team Profile</title>
 	<style>
+	h2{
+	text-align:center;
+	}
 </style>
 </head>
 
-<h1>Assignment</h1>
+<h1>Project Idea - Eavesdropper</h1>
 
 <ul class="a">
   <li><a href="index.html">Home</a></li>
   <li><a href="teamProfile.html">Team Profile</a></li>
-  <li><a href="IdealJob.html">Ideal Job</a></li>
+  <li><a href="idealJob.html">Ideal Job</a></li>
+  <li><a href="IdealJobAnalysis.html">Ideal Job Analysis</a></li>
   <li><a href="IndustryData.html">Industry Data</a></li>
   <li><a href="ITwork.html">IT work</a></li>
   <li><a href="ITtechnologies.html">IT Technologies</a></li>
   <li><a class="active" href="ProjectIdea.html">Project Idea</a></li>
+    <li><a href="Reflection.html">Reflection</a></li>
+  <li><a href="References.html">References</a></li>
   </ul>
+
+<h2>Overivew</h2>
+<p>Eavesdropper is a web based chrome application that allows users to track websites for releases of their most desired items. The program will regularly check the HTML code of a specific website that the user has chosen. You can have Eavesdropper check for specific parts of the code so that you do not get a notification every time something that you find irrelevant occurs. The user can have multiple websites and have set intervals to when they want the chrome extension to check and send a notification to you. Some available methods of notification would be text message, email or a pop up on the desktop/laptop. This will allow the user to know immediately when something has changed. This extension will run in the background and will not obstruct the user from their current activity. The task of having to manually keep an eye out for an item's release or price drops is all handled automatically by Eavesdropper from now on.</p>
+
+<h2>Motivation</h2>
+<p>The motivation behind Eavesdropper is to help users that are expecting some sort of update on a website or even multiple websites. These updates could be either a new product release or a price change on a website. In addition, the updates could be an addition to a blog or a new episode of a tv show. But the target audience is consumers who are keeping an eye on prices of items or are awaiting the release of limited edition items. However our program does not need to run out of usefulness there with plans to expand beyond our niche after launch.</p>
+<p>In the market of limited edition items today, they are often purchased all by bot programs designed to automatically buy the item when it releases. Their motivation for this is the resale market for profit, not out of passion for the item itself. We wish to give the shopper or true collector a more positive chance of getting items they want for personal reasons, not to make profit. </p>
+<p>As stated before, this program will be able to send a notification to either email or your phone so that even if you are away from the computer, you can still be kept updated if the change you are watching happens so that you can take immediate action.</p>
+
+<h2>Description</h2>
+<p>Eavesdropper will ideally be split into two running methods, a chrome extension and an application which would run independently on startup of the computer.</p>
+<p>When you open the program either from the taskbar, start menu, icon list or the start file it would open the main menu of the program.</p>
+<p>For the program running independently when you turn on the computer, it would run in the background with only a small popup which tells you that it is running. This popup can be disabled however for ease of use. When you open the program for the first time from the start file it will ask for your name, email address and/or your phone number so that the program can alert you when required. Then the program would move to the main menu.</p>
+<p>The main menu would include a list of what URL links are currently being monitored and what they are being monitored for, i.e. website update or specific value change. Next to each URL they will be a delete button to remove that specific link as well as an edit button which will allow you to change the options which you have set the website to be monitored with. As well as the URL list there will also be an “ADD” button to select a new website to be monitored. When this button is pressed it would open a screen prompting  for the URL. Once you have added the URL, the program would open the website so that the user can visually confirm it is correct and highlight what text or value that they want to be monitored. After you have selected what you want to be monitored, it will ask how regularly the user wants the website to be checked.The user can then select at what intervals the website will be refreshed to check for updates. Any changes will be alerted via the aforementioned notification options.</p>
+<p>After the user has confirmed their selection, they will be sent back to the main menu. The program will then monitor selected websites for their set refresh times. Once one of the websites which is being monitored gets updated the program will send a notification with the URL link and the time of update.</p>
+<p>For the chrome extension It would work mostly the same as the independent program, the only difference would be how the user accesses it and how URLs are input. To access the chrome extension, there is the choice of either going to the chrome extension menu or clicking on the chrome extension icon next to the bookmark icon. This Chrome Extension, once selected, will assume that the current page you are browsing is what you would like to monitor. It will then confirm if you want to look for any updates or an individual update on the website such as a value or a price. Then it will ask for the checking rate and duration then for how you want to be notified, because this is a chrome extension it cannot do computer prompts but it can make noises and a popup if you are currently running google chrome. So, the Options will be Email, SMS, and the prompt in google chrome.</p>
+<p>it is not recommended to use the chrome extension if you are waiting for a time sensitive update because the program will not run if google chrome is not running either, so it is recommended to either use the standalone software or pay $7.50 a month on our premium subscription so that you will never miss an auction, update, item, or sale. We will monitor the websites for you on a cloud server so that you do not have to worry.</p>
+
+<h2>Tools and Technology</h2>
+<p>The infrastructure we will require can all be purchased via Microsoft Azure. The fundamental backbone of the server will be an Application Server, SQL Server, mail server, IIS Server and file server; with 2 backup servers as a redundancy solution. [Microsoft.com. (2019)]</p>
+<p>IIS and Application server will host and publish the website for the webpage for clients to log into and register to use the service [VUOLLET, P. (2018).]. The information entered and stored from there will be recorded on the SQL server and any attachments will be stored on the file server.</p>
+<p>The development of the application will be a screen capture tool that can read the webpage code from a screenshot. It will use JAVA or HTML5 to open up a webpage inside the web application and ask the user to crop the area they wish to monitor; the cropping tool will decode the area and store all the code behind the page and do a constant ping to the original page. [Coleman, A. (2014)]</p>
+<p>The application will use a mail relay agent and send out a notification to the designated email address to notify the user once a change has been detected.</p>
+
+<h2>Skills</h2>
+<p>There are multiple reasons that you need to monitor changes on a website, security, traffic, is the website up or down. In our project we are interested in websites that deal in rare items, items that are not easily available. Hence, we need a tool that will monitor such a website and let us know when a particular item has become available, or the quantity or price has changed. We may also be interested in the market value of a particular item, to determine the price we are willing to pay. The software that we use needs to meet several criteria. It needs to be easy for the user to set up, it must be able to monitor the selected websites in real time, so any changes are available immediately, it needs to incorporate a visual display that shows a variety of information, websites tracked, items of interest, past prices of selected items and current prices of selected items as well as availability. All this information needs to be shown in a clear and concise format that is easy to read and analyze as well as incorporate future trends. The application must also inform the end user of any changes to the product in question in real time. This can be done through SMS, popup, email, text or a combination. The whole purpose of the app is to inform the end user of immediate changes, so they can act accordingly. There are many such systems on the market today, some free and some paid for. The first one we will look at is Distill web monitor, which is a Chrome plug in and runs in a web browser monitoring websites for changes. It then sends SMS, email, pop ups and push notification to your phone as soon as a change is detected. Some features of distill are free, but a fully paid enterprise edition is available. Change Tower is a far more sophisticated cloud based monitoring application, that enables you to search any website and returns visual and text screenshots. You can narrow down criteria to any part of a page, keywords or sentences and you can stipulate certain elements to be notified on and send alerts. Watch Tower utilizes a predictive algorithm to help you predict future changes in the quality and price of the rare items you are interested in. A simpler approach to our project would be a Python program. This would read the URL we wanted to monitor. It would then Hash (or snapshot) the entire website. After a specified number of seconds which could be set up as a Cron job in Linux, the web site would be read again. The Hash would be compared, and any changes would be noted. Any changes between snapshots would be pushed to the end user. Simple but effective.</p>
+
+<h2>Outcome</h2>
+<p>The ideal outcome is to provide a modern and fast service which is continuously growing and innovating to our target audience and also to make customers from people outside of our target audience who have a use for the service we are providing. Our target audience would be people who are trying to stay ahead of the game in all things relating to fashion business and collectable items from Pokémon cards to the latest fashion items. This service will be a one stop shop for people who want to know when a website is being updated and send them notifications via their email or a push notification. The customers would use this as a way to stay on top of the market for example by following company sites to see if they can take advantage of any new news that is being released, or by following fashion pages so they can be the first to buy a certain shoe. This would give us a solid userbase to start off with and we can expand and grow the features to target more people such as creating bots to do certain actions like automatically buying a pair of shoes. However features such as bots would be limited to one purchase per release so that the problem that already exists in the market of a small group stealing all supply isn’t perpetuated.</p>
+
 
 
 </body>
